@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    font-family: "Oswald", sans-serif !important;
+    font-weight: 400px !important;
+}
+body{
+    margin: 0 50px;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to top,rgb(219, 101, 101),rgb(245, 225, 225));
+    color: rgb(54, 51, 51) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app{
+    height: 500px;
+    width:450px;
+    border:5px groove black;
+    border-radius: 30px;
+    padding:10px;
+    overflow-y: scroll;
+    margin-top: 20px;
+    background-image: linear-gradient(to right,rgb(117, 227, 235),rgb(85, 12, 85));
+}
+.app::-webkit-scrollbar{
+    width: 0 !important;
+}
+#addnew{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,white,gray);
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(37, 37, 37);
+}
+#tasks{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+#tasks div{
+    background-image:linear-gradient(to right,white,gray) ;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+#tasks div .options i{
+
+    cursor: pointer;
+}
+h1,h4{
+    color: black !important;
+
+}
+#msg{
+    color: red;
+}
+i{
+    color: black !important;
+}
